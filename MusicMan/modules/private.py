@@ -37,9 +37,9 @@ Saya Memiliki Banyak Fitur Praktis Seperti :
 ┣• Mencari Lagu Yang ingin di Putar atau di Download.
 ┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
 ┗━━━━━━━━━━━━━━
-❃ Managed With By [Alungg](https://t.me/alunngg)
+❃ Managed With By [Lord Alung](@alunngg)
 ━━━━━━━━━━━━━━━
-Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
+Thank to risman
 </b>""",
 
 # Edit Yang Perlu Lu ganti 
@@ -52,12 +52,12 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
                         "➕ Tambahkan saya ke Grup Anda ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "💬 Channel Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📺 Channel Updates 📺", url=f"https://t.me/Daysmusicchannel"), 
                     InlineKeyboardButton(
-                        "⛑ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "Owner", url=f"@alunngg")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "🛠 Cara Memperbaiki Bot 🛠", url=f"https://t.me/Daysmusicchannel/6")
                 ]
             ]
         ),
@@ -94,7 +94,7 @@ def map(pos):
             [InlineKeyboardButton(text = 'Next »', callback_data = "help+2")]
         ]
     elif pos==len(tr.HELP_MSG)-1:
-        url = f"https://t.me/{SUPPORT_GROUP}"
+        url = f"https://t.me/Daysmusicchannel"
         return [
             [
                 InlineKeyboardButton(
@@ -104,16 +104,16 @@ def map(pos):
             ],
             [
                 InlineKeyboardButton(
-                    text='💬 Channel Updates',
-                    url=f"https://t.me/{UPDATES_CHANNEL}",
+                    text='📺 Channel Updates 📺',
+                    url=f"https://t.me/Daysmusicchannel",
                 ),
                 InlineKeyboardButton(
-                    text='⛑ Group Support', url=f"https://t.me/{SUPPORT_GROUP}"
+                    text='🤡', url=f"https://t.me/{SUPPORT_GROUP}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text='🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}"
+                    text='🛠 Cara Memperbaiki Bot 🛠', url=f"https://t.me/Daysmusicchannel/6"
                 )
             ],
             [InlineKeyboardButton(text='«', callback_data=f"help+{pos-1}")],
