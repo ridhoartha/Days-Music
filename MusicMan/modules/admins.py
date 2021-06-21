@@ -51,7 +51,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **Ga ada lagu ko nge pause goblokk**")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
         await message.reply_text("▶️ **Paused!**")
@@ -77,7 +77,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **Ga ada lagu ko nge end goblokk**")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -85,7 +85,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ **Memberhentikan Lagu!**")
+        await message.reply_text("❌ **Lagu sudah b**")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -95,7 +95,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ **Tidak ada Lagu Selanjutnya untuk dilewati!**")
+        await message.reply_text("❗ **Ga ada lagu ko nge skip goblokk**")
     else:
         callsmusic.queues.task_done(chat_id)
 
