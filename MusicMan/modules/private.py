@@ -37,8 +37,7 @@ Saya Memiliki Banyak Fitur Praktis Seperti :
 ┣• Mencari Lagu Yang ingin di Putar atau di Download.
 ┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
 ┗━━━━━━━━━━━━━━
-❃ Managed With ❤ By {OWNER}
-❃ Thanks To [Risman](https://t.me/alunngg)
+❃ Managed With By [Alungg](https://t.me/alunngg)
 ━━━━━━━━━━━━━━━
 Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
 </b>""",
@@ -164,7 +163,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara Menggunakan BOT 📜", url="https://t.me/Lunatic0de/20"
+                        "Cara Make Bot Nya Sagapung Harus Tau", url="https://t.me/Daysmusicchannel/4"
                     )
                 ]
             ]
@@ -178,12 +177,12 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Daftar admin** telah **diperbarui**""",
+    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Bot** telah **Direstart**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Group Support", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "Channel Suport", url=f"https://t.me/Daysmusicchannel"
                     ),
                     InlineKeyboardButton(
                         "Owner", url=f"https://t.me/alunngg"
