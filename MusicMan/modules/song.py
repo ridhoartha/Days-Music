@@ -48,7 +48,7 @@ def song(client, message):
 
     query = "".join(" " + str(i) for i in message.command[1:])
     print(query)
-    m = message.reply("🔎 **Sedang Mencari Lagu...**")
+    m = message.reply("🔎 **Sabar ya sayang lagi proses**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -65,7 +65,7 @@ def song(client, message):
         results[0]["views"]
 
     except Exception as e:
-        m.edit("❌ Lagu Tidak ditemukan.\n\nCoba Masukan Judul lagu yang lebih jelas.")
+        m.edit("❌ Lagu Tidak ditemukan.\n\nKalo gabisa coba cari lagu lain met🤡")
         print(str(e))
         return
     m.edit("⬇️ **Sedang Mendownload Lagu**")
@@ -74,7 +74,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "**🎵 Uploaded by @Lunatic0de**"
+        rep = "**🎵 Subs channel Days music dong bang @Daysmusicchannel**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
