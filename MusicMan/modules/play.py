@@ -687,8 +687,8 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian Ke `{position}`\n" \
-                    + f"🎼 **Request Dari:** {message.from_user.mention}",
+            caption = f"👁️‍🗨️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
+                    + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
     else:
         chat_id = get_chat_id(message.chat)
@@ -706,8 +706,8 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Sedang Memutar\n" \
-                    + f"🎼 **Request Dari:** {message.from_user.mention}",
+            caption = f" *👁️‍🗨️*Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Sedang Memutar\n" \
+                    + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
 
     os.remove("final.png")
@@ -825,8 +825,8 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian Ke `{position}`\n" \
-                    + f"🎼 **Request Dari:** {message.from_user.mention}",
+            caption = f" *👁️‍🗨️*Judul:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
+                    + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -847,8 +847,8 @@ async def ytplay(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:60]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Sedang Memutar\n" \
-                    + f"🎼 **Request Dari:** {message.from_user.mention}",
+            caption = f"👁️‍🗨️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status:** Sedang Memutar\n" \
+                    + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard,)
         os.remove("final.png")
         return await lel.delete()
@@ -1058,7 +1058,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"🎼 **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position}**",
+            caption=f"🤡 **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position} make nya gantian ya kontol jangan sagapung**",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -1080,7 +1080,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"🎼️ **Sedang Memutar Lagu Permintaan dari** {r_by.mention}",
+            caption=f"🤡 **Sedang Memutar Lagu Permintaan dari** {r_by.mention}",
         )
         
         os.remove("final.png")
