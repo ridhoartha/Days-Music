@@ -469,7 +469,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("🎵 **Sabar ya sayang lagi proses**")
+        await lel.edit("🎵 **Sebentar lagi sayang**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -486,7 +486,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**Lagu tidak ditemukan.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+                "**Lagu nya tidak di temukan** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
             )
             print(str(e))
             return
@@ -511,7 +511,7 @@ async def play(_, message: Message):
     else:
         query = "".join(" " + str(i) for i in message.command[1:])
         print(query)
-        await lel.edit("🎵 **Sabar ya sayang lagi proses**")
+        await lel.edit("🎵 **Bentar lagi sayang tunggu ya**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -717,7 +717,7 @@ async def deezer(client: Client, message_: Message):
 @authorized_users_only
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Sabar ya sayang lagi proses**")
+    lel = await message_.reply("🔄 **Sebentar lagi sayang**")
     try:
       conchat = await client.get_chat(message_.chat.id)
       conid = conchat.linked_chat.id
