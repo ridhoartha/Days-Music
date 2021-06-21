@@ -587,7 +587,7 @@ async def play(_, message: Message):
 @authorized_users_only
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **Sabar ya sayang lagi proses**")
 
     try:
       conchat = await client.get_chat(message_.chat.id)
@@ -717,7 +717,7 @@ async def deezer(client: Client, message_: Message):
 @authorized_users_only
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("🔄 **Sabar ya sayang lagi proses**")
     try:
       conchat = await client.get_chat(message_.chat.id)
       conid = conchat.linked_chat.id
