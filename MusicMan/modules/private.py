@@ -28,7 +28,7 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>┗┓ Haii {message.from_user.first_name} saya adalah {PROJECT_NAME} ┏┛\n
+        f"""<b>┗┓ Haii sayang {message.from_user.first_name} saya adalah {PROJECT_NAME} ┏┛\n
 Saya Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group Dengan cara yang Mudah
 Saya Memiliki Banyak Fitur Praktis Seperti :
 ┏━━━━━━━━━━━━━━
@@ -37,9 +37,10 @@ Saya Memiliki Banyak Fitur Praktis Seperti :
 ┣• Mencari Lagu Yang ingin di Putar atau di Download.
 ┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
 ┗━━━━━━━━━━━━━━
-❃ Managed With By [Lord Alung](@alunngg)
+❃ Managed by [Lunglung](https://t.me/alunngg)
+❃ Thanks To [Risman](https://t.me/mrismanaziz)
 ━━━━━━━━━━━━━━━
-Thank to risman
+Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
 </b>""",
 
 # Edit Yang Perlu Lu ganti 
@@ -52,12 +53,12 @@ Thank to risman
                         "➕ Tambahkan saya ke Grup Anda ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📺 Channel Updates 📺", url=f"https://t.me/Daysmusicchannel"), 
+                        "💬 Channel Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "Owner", url=f"@alunngg")
+                        "⛑ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Cara Memperbaiki Bot 🛠", url=f"https://t.me/Daysmusicchannel/6")
+                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
@@ -94,7 +95,7 @@ def map(pos):
             [InlineKeyboardButton(text = 'Next »', callback_data = "help+2")]
         ]
     elif pos==len(tr.HELP_MSG)-1:
-        url = f"https://t.me/Daysmusicchannel"
+        url = f"https://t.me/{SUPPORT_GROUP}"
         return [
             [
                 InlineKeyboardButton(
@@ -104,16 +105,16 @@ def map(pos):
             ],
             [
                 InlineKeyboardButton(
-                    text='📺 Channel Updates 📺',
-                    url=f"https://t.me/Daysmusicchannel",
+                    text='💬 Channel Updates',
+                    url=f"https://t.me/{UPDATES_CHANNEL}",
                 ),
                 InlineKeyboardButton(
-                    text='🤡', url=f"https://t.me/{SUPPORT_GROUP}"
+                    text='⛑ Group Support', url=f"https://t.me/{SUPPORT_GROUP}"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text='🛠 Cara Memperbaiki Bot 🛠', url=f"https://t.me/Daysmusicchannel/6"
+                    text='🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}"
                 )
             ],
             [InlineKeyboardButton(text='«', callback_data=f"help+{pos-1}")],
@@ -158,12 +159,12 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        """**Klik Tombol dibawah untuk Melihat Cara Menggunakan Bot**""",
+        """**Cara Pake Bot nya Click Tombol kiamat dibawah**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Cara Make Bot Nya Sagapung Harus Tau", url="https://t.me/Daysmusicchannel/4"
+                        "how to play music", url="https://t.me/Daysmusicchannel/4"
                     )
                 ]
             ]
@@ -177,12 +178,12 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Bot** telah **Direstart**""",
+    await message.reply_text("""✅ Bot **berhasil dimulai ulang!**\n\n• **Bot** telah **direstart**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Channel Suport", url=f"https://t.me/Daysmusicchannel"
+                        "Group Support", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
                     InlineKeyboardButton(
                         "Owner", url=f"https://t.me/alunngg"
