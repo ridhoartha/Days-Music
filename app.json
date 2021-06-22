@@ -1,6 +1,7 @@
 {
   "name": "Days Music",
   "description": "Days Music Made By Lunglung.",
+  "logo": "https://telegra.ph/file/6b3063e283ee1e00d7235.jpg",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/ridhoartha/Days-Music",
   "stack": "container",
