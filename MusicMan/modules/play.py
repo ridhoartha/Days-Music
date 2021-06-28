@@ -688,7 +688,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption = f"🏷️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
-                    + f"🤡 **Request Dari:** {message.from_user.mention}",
+                    + f"⚡ **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
     else:
         chat_id = get_chat_id(message.chat)
@@ -707,7 +707,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption = f"🏷️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Sedang Memutar\n" \
-                    + f"🤡 **Request Dari:** {message.from_user.mention}",
+                    + f"⚡ **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
 
     os.remove("final.png")
@@ -826,7 +826,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption = f" 🏷️**Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
-                    + f"🤡 **Request Dari:** {message.from_user.mention}",
+                    + f"⚡ **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -1036,7 +1036,7 @@ async def lol_cb(b, cb):
             [
                 [
                     InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel",
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
@@ -1058,7 +1058,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"🤡 **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position} make nya gantian ya KONTOL**",
+            caption=f"⚡ **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position} make nya gantian ya KONTOL**",
             reply_markup=keyboard,
         )
         os.remove("final.png")
