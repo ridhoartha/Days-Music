@@ -77,7 +77,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("⚠️ **Lagu nya gabisa di end,soalnya muka lu jelek sih** ⚠️")
+        await message.reply_text("⚠️**Lagu nya gabisa di end,soalnya muka lu jelek si**")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -95,7 +95,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("⚠️ **Bot nya ngambek soal nya dipake sama orang jelek sih** ⚠️")
+        await message.reply_text("⚠️**Lagu nya gabisa di skip,soalnya muka lu jelek si**")
     else:
         callsmusic.queues.task_done(chat_id)
 
