@@ -54,12 +54,12 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
                         "➕ Tambahkan saya ke Grup Anda ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📝 Channel Updates 📝", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        " Channel Updates ", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "♥️ Donasi ♥️", url=f"https://saweria.co/ridhoartha")
+                        " Donasi ", url=f"https://saweria.co/ridhoartha")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Problem? 🛠", url=f"https://t.me/alunngg")
+                        " Problem? ", url=f"https://t.me/alunngg")
                 ]
             ]
         ),
@@ -106,16 +106,16 @@ def map(pos):
             ],
             [
                 InlineKeyboardButton(
-                    text='📝 Channel Updates 📝',
+                    text=' Channel Updates ',
                     url=f"https://t.me/{UPDATES_CHANNEL}",
                 ),
                 InlineKeyboardButton(
-                    text='♥️ DONASI ♥️', url=f"https://saweria.co/ridhoartha"
+                    text=' DONASI ', url=f"https://saweria.co/ridhoartha"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text='🛠 Problem? 🛠', url=f"https://t.me/alunngg"
+                    text=' Problem? ', url=f"https://t.me/alunngg"
                 )
             ],
             [InlineKeyboardButton(text='«', callback_data=f"help+{pos-1}")],
