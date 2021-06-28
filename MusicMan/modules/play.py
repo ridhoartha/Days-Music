@@ -536,15 +536,16 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ **Lagu dengan durasi lebih dari** `{DURATION_LIMIT}` **menit tidak boleh diputar!**"
+                f"❌ **Lagu dengan durasi lebih dari** `{DURATION_LIMIT}` **menit tidak bisa diputar!**"
             )
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Daftar Putar", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
+                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -588,10 +589,11 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
+                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -634,7 +636,7 @@ async def play(_, message: Message):
                         InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -667,10 +669,11 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
+                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
         )
             requested_by = message.from_user.first_name
@@ -687,7 +690,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"👁️‍🗨️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
+            caption = f"🏷️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
                     + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
     else:
@@ -706,7 +709,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f" *👁️‍🗨️*Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Sedang Memutar\n" \
+            caption = f"🏷️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Sedang Memutar\n" \
                     + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard)
 
@@ -825,7 +828,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f" *👁️‍🗨️*Judul:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
+            caption = f" 🏷️**Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status Lagu:** Antrian Ke `{position}`\n" \
                     + f"🤡 **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
@@ -1058,7 +1061,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption=f"🤡 **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position} make nya gantian ya kontol jangan sagapung**",
+            caption=f"🤡 **Lagu yang** {r_by.mention} **minta Sedang Antri di posisi {position} make nya gantian ya KONTOL**",
             reply_markup=keyboard,
         )
         os.remove("final.png")
