@@ -541,9 +541,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
-                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
+                    InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
@@ -589,9 +588,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
-                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
+                    InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
@@ -669,9 +667,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
-                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
+                    InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
@@ -808,9 +805,8 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
-                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/alunngg"),
+                    InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
@@ -1039,9 +1035,8 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
-                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/alunngg"),
+                    InlineKeyboardButton("♻️ Playlist ", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ", url="https://t.me/Daysmusicchannel",
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
