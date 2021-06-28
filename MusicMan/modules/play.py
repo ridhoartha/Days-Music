@@ -193,9 +193,9 @@ def r_ply(type_):
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
-                InlineKeyboardButton("📖 Playlist", "playlist"),
+                InlineKeyboardButton("🔀 Playlist 🔀", "playlist"),
             ],
-            [InlineKeyboardButton("🗑 Close", "cls")],
+            [InlineKeyboardButton("⚠️ Close ⚠️", "cls")],
         ]
     )
     return mar
@@ -808,10 +808,11 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/alunngg"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -1038,10 +1039,11 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📖 Daftar Putar", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
+                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/alunngg"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
             ]
         )
     requested_by = useer_name
