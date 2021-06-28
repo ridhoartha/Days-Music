@@ -580,7 +580,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**Lagu tidak ditemukan.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+                "**Lagu tidak ditemukan.** Pastikan Judul Lagu Benar dan coba lagi, Ketik `/help` kalo masih gabisa"
             )
             print(str(e))
             return
@@ -660,7 +660,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                "**Lagu tidak ditemukan.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+                "**Lagu tidak ditemukan.** Pastikan Judul Lagu Benar dan coba lagi, Ketik `/help` kalo masih gabisa"
             )
                 print(str(e))
                 return
@@ -799,7 +799,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**Lagu tidak ditemukan.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+            "**Lagu tidak ditemukan.** Pastikan Judul Lagu Benar dan coba lagi, Ketik `/help` kalo masih gabisa"
         )
         print(str(e))
         return
