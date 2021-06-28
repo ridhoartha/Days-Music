@@ -410,9 +410,9 @@ async def m_cb(b, cb):
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("📖 Playlist", "playlist"),
+                    InlineKeyboardButton("🔀 Playlist 🔀", "playlist"),
                 ],
-                [InlineKeyboardButton("❌ Close", "cls")],
+                [InlineKeyboardButton("⚠️ Close ⚠️", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
