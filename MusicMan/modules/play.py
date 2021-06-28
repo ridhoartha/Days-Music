@@ -851,8 +851,8 @@ async def ytplay(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"👁️‍🗨️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status:** Sedang Memutar\n" \
-                    + f"🤡 **Request Dari:** {message.from_user.mention}",
+            caption = f"🎵 **Judul Lagu:** [{title[:60]}]({url})\n♻️ **Durasi:** {duration}\n💽 **Status:** Sedang Memutar\n" \
+                    + f"☣️ **Request Dari:** {message.from_user.mention}",
                    reply_markup=keyboard,)
         os.remove("final.png")
         return await lel.delete()
@@ -1085,7 +1085,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"👁️‍🗨️ **Judul Lagu:** [{title[:60]}]({url})\n⌛ **Durasi:** {duration}\n🎧 **Status:** Sedang Memutar\n",
+            caption=f"🎵 **Judul Lagu:** [{title[:60]}]({url})\n♻️ **Durasi:** {duration}\n🎵 **Status:** Sedang Memutar\n",
         )
         
         os.remove("final.png")
