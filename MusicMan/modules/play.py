@@ -542,7 +542,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
                     InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
@@ -590,7 +590,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
                     InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
@@ -670,7 +670,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton("🔀 Playlist 🔀", callback_data="playlist"),
-                    InlineKeyboardButton("📝 Channel 📝", url="https://t.me/Daysmusicchannel"),
+                    InlineKeyboardButton("✨ Channel ✨", url="https://t.me/Daysmusicchannel"),
                     InlineKeyboardButton("⚡ Owner ⚡", url="https://t.me/Alunngg"),
                 ],
                 [InlineKeyboardButton(text="⚠️ Close ⚠️", callback_data="cls")],
@@ -944,7 +944,7 @@ async def deezer(client: Client, message_: Message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="⛑ Channel", url="https://t.me/Daysmusicchannel")],
+            [InlineKeyboardButton(text="✨ Channel ✨", url="https://t.me/Daysmusicchannel")],
         ]
     )
     file_path = await convert(wget.download(url))
