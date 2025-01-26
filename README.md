@@ -1,7 +1,7 @@
 <h1 align="centre">🎵 Day's Music 🎵</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
+#### POWERED BY [Rensi](https://github.com/pytgcalls/pytgcalls)
 ### Available on telegram as [DAYS MUSIC](https://t.me/Daysmusicchannel)
 
 <h2> Features 🔥 </h2>
